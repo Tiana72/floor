@@ -1,7 +1,7 @@
 //Slider
 
 new Swiper('.hero__slider', {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
     navigation: {
