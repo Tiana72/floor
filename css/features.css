@@ -1,0 +1,74 @@
+.features {
+}
+.features__container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.features__title {
+    width: var(--width-block);
+    max-width: 480px;
+}
+.features__list {
+    width: var(--width-block);
+}
+.features__item {
+    background-image: url('../img/star.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-left: 32px;
+    font-size: 24px;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+.features__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+@media (max-width: 1240px) {
+    .features__container {
+        padding: 0 30px;
+    }
+    .features__title {
+        max-width: 330px;
+    }
+    .features__item {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 920px) {
+    .features__container {
+        flex-direction: column;
+        padding: 0 calc(var(--padding) + 30px);
+    }
+    .features__title {
+        max-width: 440px;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+    .features__list {
+        width: 100%;
+        
+    }
+    .features__item {
+        font-size: 16px;
+        max-width: 440px;
+    }
+    .features__item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 560px) {
+    .features__container {
+        padding: 0 26px;
+    }
+    .features__item {
+        font-size: 14px;
+        padding-left: 24px;
+    }
+}
